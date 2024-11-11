@@ -1,14 +1,5 @@
 #!/usr/bin/env sh
 
-# Check if Java is installed
-if ! which java > /dev/null 2>&1; then
-    echo "Java not found. Installing Java..."
-    sudo apt update
-    sudo apt install -y default-jdk
-else
-    echo "Java is already installed."
-fi
-
 # Check for a valid server jar and rename it to server.jar
 if [ ! -f server.jar ]; then
     for file in *.jar; do
