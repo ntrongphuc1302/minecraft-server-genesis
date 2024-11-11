@@ -1,0 +1,54 @@
+# Minecraft server logs
+# Ignore all log files to prevent cluttering the repository with server logs
+logs/
+
+# Minecraft world data
+# Ignore entire world folders containing data from the server's gameplay world
+world/
+world_nether/
+world_the_end/
+
+# Minecraft server backups
+# Ignore backups directory to prevent unnecessary files from being tracked
+backups/
+
+# Operating system files
+# Ignore common OS files that don't need to be part of the repository
+.DS_Store
+Thumbs.db
+
+# Temporary files
+# Ignore temporary files like logs and backups
+*.log
+*.bak
+*.tmp
+
+# Java compiled files
+# Ignore compiled Java class files, which are generated during compilation
+*.class
+
+# Include specific important configuration files
+# These files should not be ignored, as they are critical for server configuration
+!banned-ips.json
+!banned-players.json
+!commands.yml
+!ops.json
+!spigot.yml
+!whitelist.json
+
+# Exclude Minecraft server folders
+# These folders contain data that should not be part of version control
+cache/
+libraries/
+plugins/
+versions/
+
+# Exclude specific files
+# Prevent versioned files or generated files from being tracked
+server.jar
+commands.yml
+help.yml
+permissions.yml
+usercache.json
+version_history.json
+whitelist.json

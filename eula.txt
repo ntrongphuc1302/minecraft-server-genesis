@@ -1,0 +1,5 @@
+# EULA for Minecraft
+
+# By running the server, you agree to the terms of the EULA.
+
+eula=true
