@@ -1,5 +1,10 @@
 #!/usr/bin/env sh
 
+# Display the public IP address
+echo "Fetching public IP address..."
+PUBLIC_IP=$(curl -s http://checkip.amazonaws.com)
+echo "Public IP Address: $PUBLIC_IP"
+
 # Check for a valid server jar and rename it to server.jar
 if [ ! -f server.jar ]; then
     for file in *.jar; do
